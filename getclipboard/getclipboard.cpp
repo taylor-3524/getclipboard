@@ -21,11 +21,17 @@ getclipboard::getclipboard(QWidget *parent)
 	//接收子线程发来的数据
 	connect(thread, &MyThread::sendMsgToMain, this, &getclipboard::receiveMsgFromThread);
 
+
+
+
 	connect(ui.start_btn, SIGNAL(clicked()), this, SLOT(start_btn_Clicked()));
 	connect(ui.clear_btn, SIGNAL(clicked()), this, SLOT(clear_btn_Clicked()));
 	connect(ui.copy_btn, SIGNAL(clicked()), this, SLOT(copy_btn_Clicked()));
 
 }
+
+//创建剪切板指针
+QClipboard *board = QApplication::clipboard();
 
 getclipboard::~getclipboard() {
 
@@ -63,6 +69,7 @@ void getclipboard::receiveMsgFromThread(QString link, int linkNum) {
 void getclipboard::clear_btn_Clicked() {
 	ui.clipboard_text->setText("");
 }
+
 //将文本框的内容复制到剪贴板
 void getclipboard::copy_btn_Clicked() {
 	QString link = ui.clipboard_text->toPlainText();

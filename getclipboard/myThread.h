@@ -21,5 +21,7 @@ signals:
 	//给主线程发消息
 	void sendMsgToMain(QString,int);
 
+
+
 };
 #endif // MYTHREAD_H

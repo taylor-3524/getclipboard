@@ -1,9 +1,3 @@
-﻿  Reading Qt configuration (D:\real-program\Qt\5.9\msvc2015\bin\qmake.exe)
-  moc getclipboard.h
-  moc myThread.h
-  getclipboard.cpp
-  main.cpp
-  myThread.cpp
-myThread.cpp(22): error C2027: 使用了未定义类型“QApplication”
-  D:\real-program\Qt\5.9\msvc2015\include\QtCore/qobject.h(446): note: 参见“QApplication”的声明
-myThread.cpp(22): error C3861: “clipboard”: 找不到标识符
+﻿  moc_getclipboard.cpp
+  getclipboard.vcxproj -> D:\file\Visual Studio 2015\Projects\getclipboard\Debug\getclipboard.exe
+  getclipboard.vcxproj -> D:\file\Visual Studio 2015\Projects\getclipboard\Debug\getclipboard.pdb (Full PDB)
